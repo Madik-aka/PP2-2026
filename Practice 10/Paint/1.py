@@ -15,8 +15,8 @@ CANVAS_RECT  = pygame.Rect(0, CANVAS_TOP, SCREEN_W, CANVAS_H)
 # Colours
 BLACK   = (0,   0,   0  )
 WHITE   = (255, 255, 255)
-LT_GRAY = (230, 230, 230)
-MID_GRY = (160, 160, 160)
+LT_GRAY = (230, 230, 230) 
+MID_GRY = (160, 160, 160) 
 DK_GRAY = (80,  80,  80 ) 
 
 PALETTE = [

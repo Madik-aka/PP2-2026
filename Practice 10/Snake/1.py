@@ -106,7 +106,7 @@ def run_game():
     death_played = False
 
     while True:
-        clock.tick(7 + level * 2)
+        clock.tick(7 + level * 2) 
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
