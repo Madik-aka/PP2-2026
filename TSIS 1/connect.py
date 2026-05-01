@@ -1,15 +1,7 @@
-import psycopg2
+import psycopg2     # translater, for move code from python to SQL 
+from config import DB_CONFIG
 
-def connect():
-    try:
-        # Вписываем данные прямо сюда, без всяких конфигов
-        conn = psycopg2.connect(
-            host="localhost",
-            database="postgres", # проверь имя базы в pgAdmin
-            user="postgres",
-            password="1234"      # ТВОЙ ПАРОЛЬ ТУТ
-        )
-        return conn
-    except Exception as error:
-        print(f"Ошибка подключения: {error}")
-        return None
+
+def get_connection():
+    """Return a new psycopg2 connection using DB_CONFIG."""
+    return psycopg2.connect(**DB_CONFIG)
